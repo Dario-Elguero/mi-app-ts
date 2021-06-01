@@ -19,6 +19,12 @@ export const Timer = ({miliseconds}:TimerArgs) => {
 
     return (
         <>
+             <button 
+            onClick={() => setSeconds(0)}
+            className="btn btn-outline-danger mt-m2">
+                Reset
+            </button>
+
             <h4>Timer: <small>{seconds}</small></h4>
         </>
     )
